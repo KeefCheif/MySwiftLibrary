@@ -7,7 +7,11 @@
 
 public struct Stack<T> {
     
-    private var items: [T] = [T]()
+    private var items: [T]
+    
+    public init() {
+        items = [T]()
+    }
     
     public var isEmpty: Bool {
         return self.items.isEmpty

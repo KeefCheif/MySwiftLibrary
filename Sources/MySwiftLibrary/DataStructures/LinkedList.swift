@@ -25,6 +25,17 @@ public class LinkedList<E> {
     private(set) var head: Node<E>?
     private(set) var tail: Node<E>?
     
+    public init() {
+        self.head = nil
+        self.tail = nil
+    }
+    
+    public init(_ value: E) {
+        let new_node = Node(value)
+        self.head = new_node
+        self.tail = new_node
+    }
+    
     public var isEmpty: Bool {
         return self.head == nil
     }
