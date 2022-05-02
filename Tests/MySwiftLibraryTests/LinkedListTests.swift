@@ -14,6 +14,8 @@ final class LinkedListTests: XCTestCase {
         
         let list = LinkedList<Int>()
         
+        XCTAssertNil(list.head)
+        
         list.append(10)
         
         XCTAssertEqual(10, list.head!.value)
